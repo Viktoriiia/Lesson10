@@ -1,0 +1,7 @@
+<?php
+mysql_connect("127.0.0.1:3306", "root", "1111");
+mysql_select_db("courseweb");
+function __autoload($class_name) {
+    include $class_name . '.php';
+}
+?>
